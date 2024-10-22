@@ -19,7 +19,7 @@ public class LogoutInteractor implements LogoutInputBoundary {
     public void execute(LogoutInputData logoutInputData) {
         // implement the logic of the Logout Use Case (depends on the LogoutInputData.java)
         // * get the username out of the input data,
-        final String username = logoutInputData.getUserID();
+        final String username = logoutInputData.getUsername();
         // * set the username to null in the DAO
         userDataAccessObject.setCurrentUsername(null);
         // * instantiate the `LogoutOutputData`, which needs to contain the username.
